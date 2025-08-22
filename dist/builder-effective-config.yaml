@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.mycompany.mygpu
+productName: MyGPU
+linux:
+  target: AppImage
+  category: Utility
+  icon: icon-2.png
+win:
+  target: nsis
+  icon: icon-2.png
+files: []
+electronVersion: 30.5.1

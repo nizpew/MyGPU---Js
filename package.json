@@ -1,0 +1,32 @@
+{
+  "name": "MyGPU",
+  "version": "1.0.0",
+  "description": "Monitor de hardware em tempo real",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux AppImage --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^30.5.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.mycompany.mygpu",
+    "productName": "MyGPU",
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility",
+      "icon": "icon-2.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon-2.png"
+    }
+  },
+  "dependencies": {
+    "systeminformation": "^5.23.0",
+    "jquery": "^3.7.1"
+  }
+}
+
